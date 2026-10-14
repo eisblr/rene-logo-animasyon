@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Logo animasyon önizleme</title>
+<style>
+body{margin:0;background:#0b0b0c;color:#aaa;font:14px system-ui;display:grid;gap:40px;padding:64px 16px 48px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+figure{margin:0;display:grid;gap:14px;justify-items:start;cursor:pointer}
+img{width:min(300px,100%);height:auto}
+button{position:fixed;top:16px;right:16px;padding:8px 14px;background:#222;color:#eee;border:1px solid #333;border-radius:6px;cursor:pointer}
+</style>
+<button onclick="document.querySelectorAll('img').forEach(r)">Hepsini tekrar oynat</button>
+<script>
+const r=i=>{const s=i.src.split('?')[0];i.src=s+'?'+Date.now()};
+["1-cizim","2-perde","3-kose","4-r-yazim","5-yukleniyor","6-cizim-dongu","7-kose-dongu","8-r-yazim-dongu"].forEach(n=>{
+ const f=document.createElement('figure');f.innerHTML=`<img src="${n}.svg"><figcaption>${n} — tıkla: tekrar</figcaption>`;
+ f.onclick=()=>r(f.querySelector('img'));document.body.append(f)});
+</script>

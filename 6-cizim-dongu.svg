@@ -1,0 +1,18 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="100" height="30.2041" viewBox="0 0 100 30.2041" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+.hat { stroke: #FAFAFA; stroke-width: .5; stroke-dasharray: 1; stroke-dashoffset: 1; animation: ciz 4s infinite; }
+.r { animation-delay: .2s; }
+.dolgu { opacity: 0; animation: dol 4s infinite; }
+@keyframes ciz {
+  0% { stroke-dashoffset: 1; opacity: 1; animation-timing-function: cubic-bezier(.65,0,.35,1); }
+  30% { stroke-dashoffset: 0; }
+  33% { opacity: 1; } 40% { opacity: 0; } 72% { opacity: 0; } 75% { opacity: 1; stroke-dashoffset: 0; animation-timing-function: cubic-bezier(.65,0,.35,1); }
+  95%, 100% { stroke-dashoffset: 1; opacity: 1; }
+}
+@keyframes dol { 0%, 28% { opacity: 0; } 38%, 75% { opacity: 1; } 85%, 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hat { display: none; } .dolgu { opacity: 1; animation: none; } }
+</style>
+<path class="dolgu" fill-rule="evenodd" clip-rule="evenodd" fill="#FAFAFA" d="M30.2041 23.0612L22.2449 30.2041H0V0H30.2041V23.0612ZM6.93878 5.30612V9.3758H17.1923C17.6654 9.37583 18.044 9.5599 18.3279 9.92786C18.5803 10.2539 18.7066 10.659 18.7066 11.1428C18.7065 11.5949 18.5748 11.9893 18.3119 12.3258C18.0491 12.6517 17.6759 12.8149 17.1923 12.8149H11.9707C10.2566 12.8149 8.95772 13.3669 8.07438 14.4711C7.31725 15.4175 6.93878 16.6586 6.93878 18.194V24.5823H11.1348V19.7872L23.2653 24.5823V20.0395L15.2519 16.979H17.9022C19.5426 16.979 20.8415 16.3693 21.7985 15.1495C22.6608 14.0558 23.0919 12.7202 23.0919 11.1428C23.0919 9.55485 22.6608 8.21382 21.7985 7.12014C20.8415 5.91081 19.5426 5.30617 17.9022 5.30612H6.93878Z"/>
+<path class="hat" pathLength="1" d="M30.2041 23.0612L22.2449 30.2041H0V0H30.2041V23.0612Z"/>
+<path class="hat r" pathLength="1" d="M6.93878 5.30612V9.3758H17.1923C17.6654 9.37583 18.044 9.5599 18.3279 9.92786C18.5803 10.2539 18.7066 10.659 18.7066 11.1428C18.7065 11.5949 18.5748 11.9893 18.3119 12.3258C18.0491 12.6517 17.6759 12.8149 17.1923 12.8149H11.9707C10.2566 12.8149 8.95772 13.3669 8.07438 14.4711C7.31725 15.4175 6.93878 16.6586 6.93878 18.194V24.5823H11.1348V19.7872L23.2653 24.5823V20.0395L15.2519 16.979H17.9022C19.5426 16.979 20.8415 16.3693 21.7985 15.1495C22.6608 14.0558 23.0919 12.7202 23.0919 11.1428C23.0919 9.55485 22.6608 8.21382 21.7985 7.12014C20.8415 5.91081 19.5426 5.30617 17.9022 5.30612H6.93878Z"/>
+</svg>
